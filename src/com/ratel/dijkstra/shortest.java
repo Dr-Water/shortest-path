@@ -23,8 +23,7 @@ public class shortest {
 
 
     /**
-     * 2.	 * Dijkstra最短路径算法
-     * 3.
+     *Dijkstra最短路径算法
      */
     public static Map<Integer, Integer> dijkstra(Graph graph, int startIndex) {
         //创建距离表，存储从起点到每一个顶点的临时距离
@@ -105,7 +104,6 @@ public class shortest {
     private static class Graph {
         private Vertex[] vertexes;
         private LinkedList<Edge> adj[];
-
         Graph(int size) {
             //初始化顶点和邻接矩阵
             vertexes = new Vertex[size];
@@ -116,6 +114,10 @@ public class shortest {
         }
     }
 
+    /**
+     * 初始化图形
+     * @param graph
+     */
     private static void initGraph(Graph graph) {
         graph.vertexes[0] = new Vertex("A");
         graph.vertexes[1] = new Vertex("B");
